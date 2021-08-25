@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <title>Frontend Mentor | [Blogr]</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="header-menu">
+        <img src="images/logo.svg" width="101" height="40" alt="icon-logo">
+
+        <div class="dropdown">
+          <div class="menu-item-flex">
+            <span class="dropmenu" onclick="showMenuProduct()">Product</span>
+            <img id="productArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
+          </div>
+          <div id="ddItem1" class="dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="menu-item-flex">
+            <span class="dropmenu" onclick="showMenuCompany()">Company</span>
+            <img id="companyArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
+          </div>
+          <div id="ddItem2" class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="menu-item-flex">
+            <span class="dropmenu" onclick="showMenuConnect()">Connect</span>
+            <img id="connectArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
+          </div>
+          <div id="ddItem3" class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-btn">
+        <button class="btn transparent-btn">Login</button>
+        <button class="btn white-btn">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <h1>A modern publishing platform</h1>
+      <div>Grow your audience and build your online brand</div>
+
+      <div class="header-btn">
+        <button class="btn white-btn">Start for Free</button>
+        <button class="btn transparent-btn">Learn More</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="first-block">
+      <h2 class="title">Designed for the future</h2>
+
+      <div class="grid-container-1">
+
+        <h3>Introducing an extensible editor</h3>
+        <div>
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </div>
+
+        <h3>Robust content management</h3>
+        <div>
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </div>
+
+        <img src="images/illustration-editor-desktop.svg" alt="img-editor" width="700vw" height="auto">
+
+      </div>
+    </div>
+
+
+    <div class="grid-container-2">
+
+      <img src="images/illustration-phones.svg" alt="phones">
+
+      <h2>State of the Art Infrastructure</h2>
+      <div>
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </div>
+
+    </div>
+
+    <div class="grid-container-3">
+
+      <img src="images/illustration-laptop-desktop.svg" alt="laptop">
+
+      <h3>Free, open, simple</h3>
+      <div>
+        Blogr is a free and open source application backed by a large community of helpful developers. It supports
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </div>
+
+      <h3>Powerful tooling</h3>
+      <div>
+        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+        breeze, but
+        capable of producing even the most complicated sites.
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <img src="images/logo.svg" width="101" height="40" alt="icon-logo">
+
+    <h4>Product</h4>
+    <h4>Company</h4>
+    <h4>Connect</h4>
+
+    <div>Overview</div>
+    <div>About</div>
+    <div>Contact</div>
+
+    <div>Pricing</div>
+    <div>Team</div>
+    <div>Newsletter</div>
+
+    <div>Marketplace</div>
+    <div>Blog</div>
+    <div>LinkedIn</div>
+
+    <div>Features</div>
+    <div class="c">Careers</div>
+
+    <div>Integrations</div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">MD</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>

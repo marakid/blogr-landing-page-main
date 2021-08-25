@@ -1,0 +1,317 @@
+:root {
+  /* Primary colors */
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-size: 16px;
+}
+
+/* Header */
+
+header {
+  font-family: "Overpass";
+  background-image: url("images/bg-pattern-intro.svg"),
+    linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 65%);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: left;
+  border-bottom-left-radius: 70px;
+  color: var(--white);
+
+  margin-bottom: 100px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu img:first-child {
+  margin-right: 50px;
+}
+
+.header-bottom h1 {
+  padding-bottom: 10px;
+}
+
+.header-bottom .header-btn {
+  margin-bottom: 130px;
+  margin-top: 30px;
+}
+
+.menu-item-flex {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-flex img {
+  padding-left: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+#ddItem1,
+#ddItem2,
+#ddItem3 {
+  display: none;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: var(--white);
+  min-width: 160px;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 0px 100px;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  font-weight: 600;
+}
+
+.dropmenu:hover {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.transparent-btn {
+  background-color: unset;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.transparent-btn:hover {
+  background-color: var(--white);
+  color: var(--very-light-red);
+}
+
+.header-top .transparent-btn {
+  border: none;
+}
+
+.white-btn {
+  background-color: var(--white);
+  color: var(--light-red);
+}
+
+.white-btn:hover {
+  background-color: var(--very-light-red);
+  color: var(--white);
+}
+
+/* Main */
+
+main {
+  font-family: "Ubuntu";
+}
+
+h2,
+h3 {
+  color: var(--very-dark-blue);
+}
+
+/* First block grid */
+
+.title {
+  text-align: center;
+
+  position: relative;
+  top: 200px;
+}
+
+.first-block {
+  overflow: hidden;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 3fr;
+  row-gap: 1rem;
+
+  position: relative;
+  overflow: hidden;
+  left: 200px;
+}
+
+.grid-container-1 h2 {
+  grid-column: 1 / span 2;
+  place-self: center;
+}
+
+.grid-container-1 h3 {
+  align-self: end;
+}
+
+.grid-container-1 div {
+  margin-right: 200px;
+}
+
+.grid-container-1 img {
+  grid-column: 2 / 2;
+  grid-row: 1 / span 4;
+  place-self: center;
+}
+
+/* Second block grid */
+
+.grid-container-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  background-image: url("images/bg-pattern-circles.svg"),
+    linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 65%);
+  color: var(--grayish-blue);
+
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 350px;
+
+  background-repeat: no-repeat;
+  background-position-x: -20%;
+  background-position-y: 80%;
+
+  margin: 60px 0;
+}
+
+.grid-container-2 img {
+  grid-column: 1 / 1;
+  grid-row: 1 / span 2;
+  place-self: center;
+}
+
+.grid-container-2 h2 {
+  align-self: end;
+  color: var(--white);
+}
+
+.grid-container-2 div {
+  padding-right: 200px;
+}
+
+/* Third block grid */
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 3fr;
+  row-gap: 1rem;
+
+  position: relative;
+  left: -280px;
+}
+
+.grid-container-3 img {
+  grid-row: 1 / span 4;
+  place-self: center;
+}
+
+.grid-container-3 h3 {
+  align-self: end;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: "Overpass";
+  border-top-right-radius: 70px;
+  background-color: var(--very-dark-black-blue);
+  color: var(--grayish-blue);
+
+  margin-top: 100px;
+  padding: 80px;
+}
+
+footer img {
+  grid-row: 1 / span 6;
+  justify-self: left;
+}
+
+footer h4 {
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+footer div {
+  margin-bottom: 10px;
+}
+
+footer .c {
+  grid-column: 3 / span 2;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 500px) {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
