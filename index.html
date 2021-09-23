@@ -17,66 +17,62 @@
 <body>
 
   <header>
+    <div class="grid-container-header">
 
-    <div class="header-top">
+      <img class="el1" src="images/logo.svg" width="101" height="40" alt="icon-logo">
 
-      <div class="header-menu">
-        <img src="images/logo.svg" width="101" height="40" alt="icon-logo">
+      <img class="mobile-menu" src="images/icon-hamburger.svg" alt="icon-hamburger">
 
-        <div class="dropdown">
-          <div class="menu-item-flex">
-            <span class="dropmenu" onclick="showMenu('ddItem1', 'productArrow')">Product</span>
-            <img id="productArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
-          </div>
-          <div id="ddItem1" class="dropdown-content">
-            <a href="#">Overview</a>
-            <a href="#">Pricing</a>
-            <a href="#">Marketplace</a>
-            <a href="#">Features</a>
-            <a href="#">Integrations</a>
-          </div>
+      <div class="dropdown el2">
+        <div class="menu-item-flex">
+          <span class="dropmenu" onclick="showMenu('ddItem1', 'productArrow')">Product</span>
+          <img id="productArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
         </div>
-
-        <div class="dropdown">
-          <div class="menu-item-flex">
-            <span class="dropmenu" onclick="showMenu('ddItem2', 'companyArrow')">Company</span>
-            <img id="companyArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
-          </div>
-          <div id="ddItem2" class="dropdown-content">
-            <a href="#">About</a>
-            <a href="#">Team</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="menu-item-flex">
-            <span class="dropmenu" onclick="showMenu('ddItem3', 'connectArrow')">Connect</span>
-            <img id="connectArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
-          </div>
-          <div id="ddItem3" class="dropdown-content">
-            <a href="#">Contact</a>
-            <a href="#">Newsletter</a>
-            <a href="#">LinkedIn</a>
-          </div>
+        <div id="ddItem1" class="dropdown-content">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
         </div>
       </div>
 
-      <div class="header-btn">
-        <button class="btn transparent-btn">Login</button>
-        <button class="btn white-btn">Sign Up</button>
+      <div class="dropdown el3">
+        <div class="menu-item-flex">
+          <span class="dropmenu" onclick="showMenu('ddItem2', 'companyArrow')">Company</span>
+          <img id="companyArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
+        </div>
+        <div id="ddItem2" class="dropdown-content">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
       </div>
-    </div>
 
-    <div class="header-bottom">
-      <h1>A modern publishing platform</h1>
-      <div>Grow your audience and build your online brand</div>
-
-      <div class="header-btn">
-        <button class="btn white-btn">Start for Free</button>
-        <button class="btn transparent-btn">Learn More</button>
+      <div class="dropdown el4">
+        <div class="menu-item-flex">
+          <span class="dropmenu" onclick="showMenu('ddItem3', 'connectArrow')">Connect</span>
+          <img id="connectArrow" src="images/icon-arrow-light.svg" alt="icon-arrow">
+        </div>
+        <div id="ddItem3" class="dropdown-content">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
       </div>
+
+      <button id="btn-login" class="btn transparent-btn el5">Login</button>
+
+      <button class="btn white-btn el6">Sign Up</button>
+
+      <h1 class="el7">A modern publishing platform</h1>
+
+      <div class="el8">Grow your audience and build your online brand</div>
+
+      <button class="btn white-btn el9">Start for Free</button>
+
+      <button class="btn transparent-btn el10">Learn More</button>
 
     </div>
 
@@ -84,30 +80,28 @@
 
   <main>
 
-    <div class="first-block">
-      <h2 class="title">Designed for the future</h2>
+    <div class="grid-container-1">
+      <h2>Designed for the future</h2>
 
-      <div class="grid-container-1">
+      <img src="images/illustration-editor-desktop.svg" alt="img-editor" width="700vw" height="auto">
 
-        <h3>Introducing an extensible editor</h3>
-        <div>
-          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-          change the looks of a blog.
-        </div>
-
-        <h3>Robust content management</h3>
-        <div>
-          Flexible content management enables users to easily move through posts. Increase the usability of your blog
-          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-        </div>
-
-        <img src="images/illustration-editor-desktop.svg" alt="img-editor" width="700vw" height="auto">
-
+      <h3>Introducing an extensible editor</h3>
+      <div>
+        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+        change the looks of a blog.
       </div>
-    </div>
 
+      <h3>Robust content management</h3>
+      <div>
+        Flexible content management enables users to easily move through posts. Increase the usability of your blog
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      </div>
+
+      
+        
+    </div>
 
     <div class="grid-container-2">
 
@@ -125,18 +119,22 @@
 
       <img src="images/illustration-laptop-desktop.svg" alt="laptop">
 
-      <h3>Free, open, simple</h3>
-      <div>
-        Blogr is a free and open source application backed by a large community of helpful developers. It supports
-        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      <div class="first">
+        <h3>Free, open, simple</h3>
+        <div>
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        </div>
       </div>
 
-      <h3>Powerful tooling</h3>
-      <div>
-        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
-        breeze, but
-        capable of producing even the most complicated sites.
+      <div class="second">
+        <h3>Powerful tooling</h3>
+        <div>
+          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          breeze, but
+          capable of producing even the most complicated sites.
+        </div>
       </div>
 
     </div>
@@ -147,26 +145,37 @@
 
     <img src="images/logo.svg" width="101" height="40" alt="icon-logo">
 
-    <h4>Product</h4>
-    <h4>Company</h4>
-    <h4>Connect</h4>
+    <div>
+      <h4>Product</h4>
 
-    <div>Overview</div>
-    <div>About</div>
-    <div>Contact</div>
+      <div>Overview</div>
+      <div>Pricing</div>
+      <div>Marketplace</div>
+      <div>Features</div>
+      <div>Integrations</div>
+    </div>
 
-    <div>Pricing</div>
-    <div>Team</div>
-    <div>Newsletter</div>
+    <div>
+      <h4>Company</h4>
 
-    <div>Marketplace</div>
-    <div>Blog</div>
-    <div>LinkedIn</div>
+      <div>About</div>
+      <div>Team</div>
+      <div>Blog</div>
+      <div>Careers</div>
+    </div>
 
-    <div>Features</div>
-    <div class="c">Careers</div>
+    <div>
+      <h4>Connect</h4>
 
-    <div>Integrations</div>
+      <div>Contact</div>
+      <div>Newsletter</div>
+      <div>LinkedIn</div>
+    </div>
+
+
+
+
+
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
