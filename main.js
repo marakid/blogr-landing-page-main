@@ -10,3 +10,16 @@ function showMenu(itemId, arrowId) {
     document.getElementById(arrowId).style.transform = "rotate(0deg)";
   }
 }
+
+function showMobileMenu() {
+  let iconSource = document.getElementById("mobile-menu-icon").src;
+  let menuDisplay = document.getElementById("mobile-menu").style.display;
+  menuDisplay = menuDisplay || "none";
+  if (iconSource.includes("hamburger")) {
+    document.getElementById("mobile-menu-icon").src= "images/icon-close.svg";
+    document.getElementById("mobile-menu").style.display = "grid";
+  } else {
+    document.getElementById("mobile-menu-icon").src= "images/icon-hamburger.svg";
+    document.getElementById("mobile-menu").style.display = "none";
+  }
+}

@@ -21,7 +21,53 @@
 
       <img class="el1" src="images/logo.svg" width="101" height="40" alt="icon-logo">
 
-      <img class="mobile-menu" src="images/icon-hamburger.svg" alt="icon-hamburger">
+      <img id="mobile-menu-icon" src="images/icon-hamburger.svg" alt="icon-hamburger" onclick="showMobileMenu()">
+      <div id="mobile-menu">
+        <div>
+          <div class="mobile-menu-item">
+            <span onclick="showMenu('mmItem1', 'redProductArrow')">Product</span>
+            <img id="redProductArrow" src="images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <div id="mmItem1" class="mobile-dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+        </div>
+  
+        <div>
+          <div class="mobile-menu-item">
+            <span onclick="showMenu('mmItem2', 'redCompanyArrow')">Company</span>
+            <img id="redCompanyArrow" src="images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <div id="mmItem2" class="mobile-dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+  
+        <div>
+          <div class="mobile-menu-item">
+            <span onclick="showMenu('mmItem3', 'redConnectArrow')">Connect</span>
+            <img id="redConnectArrow" src="images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <div id="mmItem3" class="mobile-dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <hr style="height: 3px; width: 100%; margin: 20px 0px;">
+
+        <button id="btn-login" class="btn">Login</button>
+  
+        <button class="btn red-btn">Sign Up</button>
+      </div>
 
       <div class="dropdown el2">
         <div class="menu-item-flex">
