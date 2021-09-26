@@ -137,6 +137,10 @@ header {
     place-self: flex-start flex-end;
   }
 
+  #mobile-menu-icon:hover {
+    cursor: pointer;
+  }
+
   #mobile-menu {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
@@ -151,6 +155,10 @@ header {
   .mobile-menu-item {
     padding-top: 10px;
     text-align: center;
+  }
+
+  .mobile-menu-item:hover {
+    cursor: pointer;
   }
 
   .mobile-dropdown-content {
