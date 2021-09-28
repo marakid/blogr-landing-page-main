@@ -13,8 +13,6 @@ function showMenu(itemId, arrowId) {
 
 function showMobileMenu() {
   let iconSource = document.getElementById("mobile-menu-icon").src;
-  let menuDisplay = document.getElementById("mobile-menu").style.display;
-  menuDisplay = menuDisplay || "none";
   if (iconSource.includes("hamburger")) {
     document.getElementById("mobile-menu-icon").src= "images/icon-close.svg";
     document.getElementById("mobile-menu").style.display = "grid";
