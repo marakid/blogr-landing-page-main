@@ -15,7 +15,7 @@ function showMobileMenu() {
   let iconSource = document.getElementById("mobile-menu-icon").src;
   if (iconSource.includes("hamburger")) {
     document.getElementById("mobile-menu-icon").src= "images/icon-close.svg";
-    document.getElementById("mobile-menu").style.display = "grid";
+    document.getElementById("mobile-menu").style.display = "block";
   } else {
     document.getElementById("mobile-menu-icon").src= "images/icon-hamburger.svg";
     document.getElementById("mobile-menu").style.display = "none";

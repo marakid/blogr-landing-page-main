@@ -142,14 +142,23 @@ header {
   }
 
   #mobile-menu {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+    position: absolute;
     background-color: var(--white);
     color: var(--very-dark-black-blue);
     margin-top: 50px;
-    justify-items: center;
+    margin-left: auto;
+    z-index: 1;
+    width: 70vw;
     padding: 30px;
     border-radius: 5px;
+    box-shadow: 1px 1px 8px #888888;
+  }
+
+  .mobile-btns {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
   }
 
   .mobile-menu-item {
@@ -166,8 +175,6 @@ header {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    margin-left: -30px;
-    width: 150%;
   }
 
   .mobile-dropdown-content a {
@@ -180,6 +187,8 @@ header {
   #btn-login {
     background-color: unset;
     color: var(--very-dark-black-blue);
+    width: 100px;
+    place-self: center;
   }
 
   .grid-container-header .dropdown {
@@ -293,6 +302,8 @@ header {
 .red-btn {
   background-color: var(--light-red);
   color: var(--white);
+  width: 100px;
+  place-self: center;
 }
 
 .white-btn:hover {
